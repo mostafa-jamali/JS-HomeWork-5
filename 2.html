@@ -1,0 +1,10 @@
+<script type="text/javascript">
+    function Validate(phone){
+        if(phone.length == 13 && phone.startsWith('+989') && isNaN(phone) != 1){
+            alert( `${phone} is valid iranian phone number `);
+        }else{
+            alert (`${phone} is invalid iranian phone number `);
+        }
+    };
+    Validate("+989356361234");
+</script>

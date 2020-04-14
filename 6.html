@@ -1,0 +1,14 @@
+<script>
+    function mergeObject(array){
+        let mapped = array.map((item) => ({ [item.key]: item.value }));
+        let mergeObj = Object.assign({}, ...mapped);
+        console.log(mergeObj);
+    };
+    
+    let array = [
+        { key: "a", value: "b" },
+        { key: "c", value: "d" },
+        { key: "e", value: "f" },
+    ];
+    mergeObject(array);
+</script>
